@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coach answered</title>
+</head>
+<body>
+<div class="container my-3">
+  <h1>Stupid Coaching</h1>
+  <div id="your-question" class="border-start border-4 ps-3 py-2 mt-4">
+    <p class="fs-4"><%= @question %></p>
+    <h2 class="fw-lighter fst-italic fs-5">-You</h2>
+  </div>
+  <div id="coach-answer" class="border-start border-4 ps-3 py-2 my-4 bg-warning bg-opacity-10">
+    <p class="fs-4"><%= @answer %></p>
+    <h2 class="fw-lighter fst-italic fs-5">-Your coach</h2>
+  </div>
+  <a href="/ask" class="btn btn-primary mt-3">Ask a new question</a>
+</div>
+</body>
+</html>
